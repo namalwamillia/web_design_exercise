@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color:wheat; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>div element which turns red when someone moves the mouse over it.</h1>
+
+    <!-- div element -->
+    <div id="myDiv">myDiv</div>
+
+    <script>
+        // JavaScript to change the color on mouseover
+        var myDiv = document.getElementById('myDiv');
+        myDiv.addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'red';
+        });
+    </script>
+</body>
+</html>
